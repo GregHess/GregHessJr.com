@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="GregHessJr.Website.Master.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<meta charset="utf-8">
+	<title>Gregory A. Hess Jr.</title>
+	<meta name="description" content="Gregory Alan Hess Jr">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- LinearIcons -->
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<!-- Awesomefont -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- General CSS Settings -->
+	<link rel="stylesheet" href="/Content/css/general_style.css">
+	<!-- Main Style of the template -->
+	<link rel="stylesheet" href="/Content/css/main_style.css">
+	<!-- Reseters -->
+	<link rel="stylesheet" href="/Content/css/reset_style.css">
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+
+	<!-- Styles inserted on a per page basis. -->
+	<asp:ContentPlaceHolder ID="cphStyles" runat="server" />
+</head>
+<body>
+	<form id="form1" runat="server">
+		
+		<!-- Slideshow Background -->
+		<div class="lx-slideshow-background">
+			<div class="lx-slideshow-img"><img src="/Content/images/background/Road_Trip_Canyon_1.jpg" alt="background 1" /></div>
+			<div class="lx-slideshow-img"><img src="/Content/images/background/Road_Trip_Grassy_Hills_1.jpg" alt="background 2" /></div>
+			<div class="lx-slideshow-img"><img src="/Content/images/background/Road_Trip_Canyon_6.jpg" alt="background 3" /></div>
+			<div class="lx-slideshow-img"><img src="/Content/images/background/Road_Trip_Plains_1.jpg" alt="background 4" /></div>
+		</div>
+		<!-- End Slideshow Background -->
+
+		<!-- Wrapper -->
+		<div class="lx-wrapper" data-background="/Content/images/background/Road_Trip_Grassy_Hills_4.jpg" data-background-color="#000000">	
+
+			<!-- Loader -->
+			<div class="lx-loader">
+				<h1>NAFIDA</h1>
+				<img src="/Content/images/ring.svg" alt="Loading" />
+			</div>
+			<!-- End Loader -->
+		
+			<!-- Copyright -->
+			<div class="lx-copyright">
+				<p>Copyright &copy; <%= DateTime.Now.Year %> Gregory A. Hess Jr. All Rights Reserved</p>
+			</div>
+			<!-- End Copyright -->
+			
+			<!-- Main Content -->
+			<div class="lx-g1-f">
+				<div class="lx-main-content">
+					<asp:ContentPlaceHolder ID="cphMainContent" runat="server" />
+				</div>
+			</div>
+			<!-- End Main Content -->
+			
+			<!-- Popup -->
+			<div class="lx-popup">
+				<div class="lx-popup-inside">
+					<a href="javascript:;"><i class="fa fa-caret-left"></i></a>
+					<a href="javascript:;"><i class="fa fa-caret-right"></i></a>
+					<div class="lx-popup-content">
+						<div class="lx-popup-image">
+							<a href="javascript:;"><i class="lnr lnr-cross"></i></a>
+							<img src="#" alt="image title here" />
+						</div>
+						<div class="lx-popup-infos">
+
+						</div>			
+						<div class="lx-clear-fix"></div>
+						<div class="lx-popup-details">
+							<ul>
+								<li><span></span></li>
+								<li><span></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Popup -->	
+			
+			<div class="lx-clear-fix"></div>
+		</div>
+		<!-- End Wrapper -->
+	</form>
+	<asp:ContentPlaceHolder ID="cphJavaScript" runat="server" />
+	
+	<!-- JQuery -->
+	<script src="/Content/js/jquery-1.12.4.min.js"></script>
+	<!-- Popup Script -->
+	<script src="/Content/js/jquery.popup.js"></script>	
+	<!-- Main Script -->
+	<script src="/Content/js/script.js"></script>	
+</body>
+</html>
