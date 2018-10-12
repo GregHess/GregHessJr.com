@@ -29,7 +29,7 @@
 						<div class="lx-home">
 							<div class="lx-home-content">
 								<div class="lx-home-overview">
-									<h1>Gregory A. Hess Jr. TEST</h1>
+									<h1>Gregory A. Hess Jr.</h1>
 									<em>Web Application Engineer</em>
 									<p>Experienced Software Engineer with a demonstrated history of working in the logistics and marketing/advertising industries. Skilled in C#, ASP.NET, Web Forms, MVC, WebAPI, Angular, Azure, and Artificial Intelligence. Strong engineering professional with a Bachelor’s Degree focused in Computer Science and a minor in Writing from Stockton University. </p>
 								</div>
